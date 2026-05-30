@@ -54,14 +54,60 @@ The project was completed as part of the **JPMorgan Chase Software Engineering J
 
 ## Project Structure
 
-```bash
-src/
- ├── main/
- │   ├── java/
- │   ├── resources/
- │
- ├── test/
+````md
+## 📂 Project Structure
+
+```text
+midas-core
+├── .mvn/
+│   └── wrapper/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/com/jpmc/midascore/
+│   │   │   ├── component/
+│   │   │   │   ├── KafkaConfig.java
+│   │   │   │   └── KafkaTransactionListener.java
+│   │   │   │
+│   │   │   ├── controller/
+│   │   │   │   └── BalanceController.java
+│   │   │   │
+│   │   │   ├── entity/
+│   │   │   │   ├── UserRecord.java
+│   │   │   │   └── TransactionRecord.java
+│   │   │   │
+│   │   │   ├── foundation/
+│   │   │   │   ├── Balance.java
+│   │   │   │   └── Transaction.java
+│   │   │   │
+│   │   │   ├── repository/
+│   │   │   │   ├── TransactionRepository.java
+│   │   │   │   └── UserRepository.java
+│   │   │   │
+│   │   │   └── MidasCoreApplication.java
+│   │   │
+│   │   └── resources/
+│   │       └── application.yml
+│   │
+│   └── test/
+│       └── java/com/jpmc/midascore/
+│           ├── TaskOneTests.java
+│           ├── TaskTwoTests.java
+│           ├── TaskThreeTests.java
+│           ├── TaskFourTests.java
+│           └── TaskFiveTests.java
+│
+├── target/
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+├── README.md
+└── .gitignore
+````
+
 ```
+```
+
 
 ## Learning Outcomes
 
@@ -81,5 +127,5 @@ Successfully completed the **JPMorgan Chase Software Engineering Job Simulation*
 
 **Sharun Prakash Gurramkonda**
 
-- GitHub: (Add your GitHub profile link)
-- LinkedIn: (Add your LinkedIn profile link)
+- GitHub: https://github.com/sharunpg
+- LinkedIn: https://www.linkedin.com/in/sharun-prakash-gurramkonda-27459b25b/
